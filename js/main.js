@@ -1,3 +1,5 @@
+//JS для главной страницы сайта (Пользовательская часть). Реализация свайпера
+
 const tabItem = document.querySelectorAll('.tabs__btn-item');
 const tabContent = document.querySelectorAll('.tabs__content-item');
 
@@ -31,7 +33,9 @@ const swiper = new Swiper(".swiper", {
         el: ".swiper-pagination",
     },
     autoplay: {
-        delay: 3000, 
+        delay: 7000, 
         disableOnInteraction: false, 
     }
 });
+
+

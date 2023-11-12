@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="images/logo.svg" alt="">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list-admin">
+                        <li class="menu__list-item"><a href="admin-cars.html" class="menu__list-link">CARS</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link menu__list-link--active">CLIENTS</a></li>
+                        <li class="menu__list-item"><a href="call-requests.html" class="menu__list-link">CALL REQUESTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="choose">
+                <div class="container">
+                    <h2 class="section-title">
+                        Clients
+                    </h2>
+                    <div class="tabs">
+                        <div class="tabs__btn-admin">
+                            <button class="tabs__btn-item tabs__btn-item--active" 
+                            data-button="content-1">Clients</button>
+                            <button class="tabs__btn-item" data-button="content-2">Add Client</button>
+                            <button class="tabs__btn-item" data-button="content-3">Client search</button>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__content-item tabs__content-item--active" id="content-1">
+                                
+                            </div>
+                           
+                                <div class="tabs__content-item" id="content-2">
+
+                                <form action="http://localhost:8080/clients/create" method="post">
+                                    <input type="text" class="form__input" name="fullName" placeholder="Full name"/>
+                                    <input type="text" class="form__input" name="yearOfBirth" placeholder="Year of birth"/>
+                                    <input type="number" class="form__input" name="passport" placeholder="Passport"/>
+                                    <input type="text" class="form__input" name="contractNumber" placeholder="Contract number"/>
+                                    <input type="number" class="form__input" name="mobilePhone" placeholder="Mobile phone"/>
+                                    <input id="form__btn_admin" type="submit" class="form__btn" value="Добавить человека"/>
+                                </form>
+
+
+                                
+                            </div>
+                            <div class="tabs__content-item" id="content-3">
+                                <form id="formSearch" action="#" class="form">
+                                    <input id="inputSearch" type="text" class="form__input" placeholder="Find car">
+                                    <button id="form__btn_search" class="form__btn" type="submit">FIND</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <ul class="app">
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/appstore.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/googleplay.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__copy">
+                    <p class="footer__copy-text">
+                        For questions about the TrueCar Auto Buying Service please call 1-888-878-3227.
+Certified Dealers are contractually obligated by TrueCar to meet certain customer service requirements and complete the TrueCar Dealer Certification Program.
+                    </p>
+
+                    <p class="footer__copy-text">
+TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles shown on this website are offered for sale by licensed motor vehicle dealers. 
+All vehicles are subject to prior sale. By accessing this website, you agree to the TrueCar Terms of Service and Privacy Policy.
+                    </p>
+                </div>
+                <nav class="copy__nav">
+                    <ul class="copy__nav-list">
+                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Terms of Service</a></li>
+                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Privacy Policy</a></li>
+                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Do Not Sell My Personal Information</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="js/server.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/admin-clients.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="images/logo.svg" alt="">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list-admin">
+                        <li class="menu__list-item"><a href="admin-cars.html" class="menu__list-link">CARS</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link menu__list-link--active">CLIENTS</a></li>
+                        <li class="menu__list-item"><a href="call-requests.html" class="menu__list-link">CALL REQUESTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="admin__card">
+                <div class="container">
+                    <div class="admin__card-clients" id="card_clients">  
+                    </div>
+                    <input id="form__btn-deleteClient" type="submit" class="form__btn" value="Удалить человека"/>
+                    <input id="form__btn-editClient" type="submit" class="form__btn" value="Редактировать человека"/>
+                </div>
+            </section>
+                
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <ul class="app">
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/appstore.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/googleplay.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__copy">
+                    <p class="footer__copy-text">
+                        For questions about the TrueCar Auto Buying Service please call 1-888-878-3227.
+Certified Dealers are contractually obligated by TrueCar to meet certain customer service requirements and complete the TrueCar Dealer Certification Program.
+                    </p>
+
+                    <p class="footer__copy-text">
+TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles shown on this website are offered for sale by licensed motor vehicle dealers. 
+All vehicles are subject to prior sale. By accessing this website, you agree to the TrueCar Terms of Service and Privacy Policy.
+                    </p>
+                </div>
+                <nav class="copy__nav">
+                    <ul class="copy__nav-list">
+                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Terms of Service</a></li>
+                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Privacy Policy</a></li>
+                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Do Not Sell My Personal Information</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="js/server.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/admin-cardClient.js"></script>
+</body>
+</html>

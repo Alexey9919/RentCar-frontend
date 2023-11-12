@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="images/logo.svg" alt="">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list-admin">
+                        <li class="menu__list-item"><a href="#" class="menu__list-link menu__list-link--active">CARS</a></li>
+                        <li class="menu__list-item"><a href="admin-clients.html" class="menu__list-link">CLIENTS</a></li>
+                        <li class="menu__list-item"><a href="call-requests.html" class="menu__list-link">CALL REQUESTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="admin__card-edit">
+                <div class="container">
+                    <div class="admin__cardCars-edit" id="card_cars-edit">  
+
+                
+                            <!-- <form action="http://localhost:8080/cars/create" method="post" enctype="multipart/form-data">
+                                <input type="text" class="form__input" name="model" placeholder="Model"/>
+                                <input type="text" class="form__input" name="color" placeholder="Color"/>
+                                <input type="number" class="form__input" name="year" placeholder="Year"/>
+                                <input type="text" class="form__input" name="stateNumber" placeholder="State number"/>
+                                <input type="number" class="form__input" name="rentalPeriod" placeholder="Rental period"/>
+                                <div class="form__input">
+                                    <p> <input type = "radio" name="body" value="1"/> Sedan</p>
+                                    <p> <input type = "radio" name="body" value="2"/> Crossover</p>
+                                    <p> <input type = "radio" name="body" value="3"/> Minivan</p>
+                                    <p> <input type = "radio" name="body" value="4"/> Electrificated</p>
+                                </div>
+                                <input type="file" class="file__newCar-admin" name="file" />
+                                <input id="form__btn-editCar" type="submit" class="form__btn" value="Сохранить автомобиль"/>
+                            </form> -->
+
+                            <form id="admin__form-editCar" action="#" method="POST" enctype="multipart/form-data">
+                                <img src="" id="images__cars-edit" alt="" class="card__img-admin">
+                                <input id="editModel" type="text" class="form__input" name="model" value=""/>
+                                <input id="editColor" type="text" class="form__input" name="color" value=""/>
+                                <input id="editYear" type="number" class="form__input" name="year" value=""/>
+                                <input id="editStateNumber" type="text" class="form__input" name="stateNumber" value=""/>
+                                <input id="editPrice" type="number" class="form__input" name="price" value=""/>
+                                <div class="form__input">
+                                    <p> <input id="editBody" type = "radio" name="body" value="1"/> Sedan</p>
+                                    <p> <input id="editBody" type = "radio" name="body" value="2"/> Crossover</p>
+                                    <p> <input id="editBody" type = "radio" name="body" value="3"/> Minivan</p>
+                                    <p> <input id="editBody" type = "radio" name="body" value="4"/> Electrificated</p>
+                                </div>
+                                <button id="form__btn-editCarServer" class="form__btn" type="submit">Сохранить автомобиль</button>
+                            </form>
+                            
+                    </div>
+                </div>
+            </section>
+                
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <ul class="app">
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/appstore.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="images/googleplay.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__copy">
+                    <p class="footer__copy-text">
+                        For questions about the TrueCar Auto Buying Service please call 1-888-878-3227.
+Certified Dealers are contractually obligated by TrueCar to meet certain customer service requirements and complete the TrueCar Dealer Certification Program.
+                    </p>
+
+                    <p class="footer__copy-text">
+TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles shown on this website are offered for sale by licensed motor vehicle dealers. 
+All vehicles are subject to prior sale. By accessing this website, you agree to the TrueCar Terms of Service and Privacy Policy.
+                    </p>
+                </div>
+                <nav class="copy__nav">
+                    <ul class="copy__nav-list">
+                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Terms of Service</a></li>
+                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Privacy Policy</a></li>
+                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Do Not Sell My Personal Information</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="js/admin-editCar.js"></script>
+</body>
+</html>
