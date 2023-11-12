@@ -26,7 +26,6 @@ fetch(queryCars).then((response) => {
         <p class="card__text">Data:   ${strData}</p>
     </div>
 `;
-{/* <button id="d${card.id}" class="button-adminka"> See details </button> */}
 
 content1.insertAdjacentHTML('beforeend', html);
 }

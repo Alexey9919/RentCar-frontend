@@ -26,8 +26,8 @@ for(let card of data){
         <h4 class="card__title">${card.model} ${card.year}</h4>
         <p class="card__text">${card.color}</p>
         <p class="card__price">${card.stateNumber}</p>
+        <button id="t${card.id}" class="button-adminka"> See details </button>
     </div>
-    <a href="" class="card__link">See details</a>
 </div>
 
 `;
@@ -46,4 +46,19 @@ type4.insertAdjacentHTML('beforeend', html);
 
 }
 
+});
+
+fetch(queryCars).then((response) => {
+    return response.json()
+}).then((data) => {
+    
+   
+    for(let card of data){
+        let idCard = '#t' + card.id;
+        document.querySelector(idCard).onclick = function() {
+            localStorage.setItem("key1", card.id);
+            window.location.href = 'cars-card.html';
+        };
+
+}
 });
